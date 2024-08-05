@@ -1,0 +1,12 @@
+/* Globe.css */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    background-color: #0d0d0d; /* Dark background */
+}
+
+h1 {
+    font-size: 3rem;
+    color: #00ffff; /* Neon blue */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}

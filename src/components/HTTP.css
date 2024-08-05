@@ -1,0 +1,26 @@
+.http-packets-container {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #232323;
+}
+
+.http-packets-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.http-packets-container th, 
+.http-packets-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.http-packets-container pre {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}

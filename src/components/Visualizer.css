@@ -1,0 +1,87 @@
+.visualizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #0d0d0d; /* Dark background for contrast */
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.visualizer-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.map-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin-bottom: 20px;
+    border: 1px solid #fff; /* White border for the map */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon effect */
+}
+
+.leaflet-container {
+    border-radius: 10px;
+}
+
+canvas {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon effect */
+}
+
+.packet {
+    transition: transform 0.3s ease-in-out;
+}
+
+.packet:hover {
+    transform: scale(1.2);
+    opacity: 0.8; /* Slightly transparent effect on hover */
+}
+
+.line {
+    stroke: rgba(0, 255, 255, 0.8); /* Neon color for lines */
+    stroke-width: 2;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.line:hover {
+    stroke: rgba(255, 0, 0, 1); /* Change line color on hover */
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.4), 0 0 60px rgba(0, 255, 255, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+}
+
+.neon-text {
+    animation: neon 1.5s infinite alternate;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .visualizer-container {
+        padding: 10px;
+    }
+
+    .visualizer-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .map-container {
+        height: 300px; /* Smaller height for mobile */
+    }
+
+    canvas {
+        height: 300px; /* Smaller height for mobile */
+    }
+}

@@ -1,0 +1,14 @@
+/* src/components/Map.css */
+
+.map {
+    height: 400px; /* Set a fixed height for the map */
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+@media (max-width: 768px) {
+    .map {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
